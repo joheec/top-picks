@@ -1,0 +1,74 @@
+.page {
+  padding-top: 2em;
+  background-color: aliceblue;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  cursor: pointer;
+  padding: 1em 0;
+  border: lightsalmon solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 dimgray;
+  background-color: cornsilk;
+  margin: 2em;
+}
+.card .name {
+  color: darkcyan;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+.card .quote {
+  color: darkslategrey;
+  text-align: center;
+  font-style: italic;
+  margin: 0.5em 1em 1em 1em;
+}
+.card > .logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card > .logo > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card > .logo.cover {
+  max-height: 60%;
+}
+.card > .logo.cover > img {
+  height: 100%;
+}
+.author-card {
+  height: 130px;
+  width: calc(100% - 64px);
+  margin: 0 2em 2em 2em;
+  background-color: azure;
+}
+.author-card > .name {
+  color: lightseagreen;
+  font-size: 1.5em;
+}
+.author-card > .title {
+  color: dimgrey;
+  text-align: center;
+  font-weight: 500;
+  margin: 0em 1em 1em 1em;
+}
+.author-card > .logo {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+.author-card > .logo > img {
+  height: 100%;
+}
